@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+// for example components
+import BasicTextFields from './components/BasicTextFields';
+// import BasicButtons from './components/BasicButtons';
+
+// for layout and responsive
+// import BasicGrids from './components/BasicGrids';
+
+// for component work with objects and hooks 
+// import { Grid } from '@mui/material';
+// import ProfilePage from './pages/ProfilePage';
+
+// for theme and style 
+// import BasicButtons from './components/BasicButtons';
+// import { ThemeProvider } from '@mui/styles';
+// import { lightTheme } from './theme/theme';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* for example components */}
+      <BasicTextFields></BasicTextFields>
+      {/* <BasicButtons></BasicButtons> */}
+
+      {/* for layout and responsive */}
+      {/* <BasicGrids></BasicGrids> */}
+
+      {/* for component work with objects and hooks */}
+      {/* <Grid item container lg={12} spacing={1}>
+        <ProfilePage></ProfilePage> 
+      </Grid> */}
+
+      {/* for theme and style */}
+      {/* <ThemeProvider theme={lightTheme}>
+        <BasicButtons></BasicButtons>
+      </ThemeProvider> */}
     </div>
   );
 }
