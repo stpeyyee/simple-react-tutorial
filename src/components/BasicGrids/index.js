@@ -3,28 +3,30 @@ import { Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const Item = styled(Paper)(({ theme }) => ({
-    // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    backgroundColor: theme.palette.warning,
-    ...theme.typography.body2,
+    backgroundColor: theme.palette.primary.main,
     padding: theme.spacing(1),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    fontSize: theme.typography.h1
   }));
 
 export default function BasicGrids(){
     return(
-    <Grid item container direction="row" xs={12} sm={12} md={12} lg={12} spacing={2} style={{paddingTop: 100}}>
+    <Grid item container direction="row" xs={12} sm={12} md={12} lg={12} spacing={1} style={{paddingTop: 100}}>
             <Grid item xs={12} sm={6} md={3} lg={3}>
                 <Item>1</Item>
+                {/* <Paper>1</Paper> */}
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={3}>
                 <Item>2</Item>
+                {/* <Paper>2</Paper> */}
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={3}>
                 <Item>3</Item>
+                {/* <Paper>3</Paper> */}
             </Grid>
             <Grid item xs={12} sm={6} md={3} lg={3}>
                 <Item>4</Item>
+                {/* <Paper>4</Paper> */}
             </Grid>
     </Grid>
     )

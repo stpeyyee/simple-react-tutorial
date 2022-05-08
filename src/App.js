@@ -2,11 +2,11 @@
 import './App.css';
 
 // for example components
-import BasicTextFields from './components/BasicTextFields';
+// import BasicTextFields from './components/BasicTextFields';
 // import BasicButtons from './components/BasicButtons';
 
 // for layout and responsive
-// import BasicGrids from './components/BasicGrids';
+import BasicGrids from './components/BasicGrids';
 
 // for component work with objects and hooks 
 // import { Grid } from '@mui/material';
@@ -21,11 +21,14 @@ function App() {
   return (
     <div className="App">
       {/* for example components */}
-      <BasicTextFields></BasicTextFields>
+      {/* <BasicTextFields></BasicTextFields> */}
       {/* <BasicButtons></BasicButtons> */}
 
       {/* for layout and responsive */}
-      {/* <BasicGrids></BasicGrids> */}
+      {/* <ThemeProvider theme={lightTheme}> */}
+        <BasicGrids></BasicGrids>
+      {/* </ThemeProvider> */}
+      
 
       {/* for component work with objects and hooks */}
       {/* <Grid item container lg={12} spacing={1}>

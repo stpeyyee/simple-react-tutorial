@@ -4,10 +4,11 @@ export const lightTheme = createTheme({
     mode: "light",
     // primary and secondary will appear when component use color prop
     primary: {
-      main: '#004f96',
+      main: '#51b4ec',
+      secondary: '#ffffff'
     },
     secondary: {
-      main: '#51b4ec',
+      main: '#ffffff',
     },
     error: {
       main: '#f04461',
@@ -27,7 +28,7 @@ export const lightTheme = createTheme({
     },
   },
   typography: {
-    fontSize: 15,
+    fontSize: 30,
     h1: {
       fontSize: 40,
     },
@@ -50,41 +51,3 @@ export const lightTheme = createTheme({
   },
 });
 
-
-export const darkTheme = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-        main: '#ffffff',
-    },
-    secondary: {
-        main: "#51b4ec",
-    },
-    error: {
-      main: '#f04461',
-    },
-    warning:{
-      main: '#ff9800',
-    },
-    info: {
-      main: '#242f39'
-    },
-    success:{
-      main: '#4caf50'
-    },
-    background: {
-        default: "#000A15",
-        paper: "#000A15",
-    },
-  },
-  typography: {
-    fontSize: 15,
-    h1: {
-      fontSize: 40,
-    },
-    h2:  {
-      fontSize: 30,
-    },
-  },
-
-});
