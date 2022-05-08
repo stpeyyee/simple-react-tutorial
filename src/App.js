@@ -14,8 +14,8 @@ import BasicGrids from './components/BasicGrids';
 
 // for theme and style 
 // import BasicButtons from './components/BasicButtons';
-// import { ThemeProvider } from '@mui/styles';
-// import { lightTheme } from './theme/theme';
+import { ThemeProvider } from '@mui/styles';
+import { lightTheme } from './theme/theme';
 
 function App() {
   return (
